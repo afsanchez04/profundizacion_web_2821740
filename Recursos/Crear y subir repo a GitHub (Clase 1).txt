@@ -15,6 +15,6 @@ Crear y subir repo a GitHub
  
    git config --global --list
 ---------------
-6. git commit -m "repo-creado"
-7. 
-s (🟢nothing to commit, working tree clean)
+6. git commit -m "repo-creado" (🟢nothing to commit, working tree clean)
+
+7. git push
