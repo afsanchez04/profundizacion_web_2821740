@@ -1,0 +1,20 @@
+Crear y subir repo a GitHub
+
+1. git init
+
+2. git status
+
+3. git add .
+
+4. git status
+-------------------
+5. git config --global --list
+   
+   git config --global user.name "afsanchez04"
+   git config --global user.email "afsanchez04@gmail.com"
+ 
+   git config --global --list
+---------------
+6. git commit -m "repo-creado"
+7. 
+s (🟢nothing to commit, working tree clean)
