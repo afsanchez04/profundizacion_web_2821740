@@ -1,7 +1,13 @@
 
 const container = document.querySelector(".container")
 
-capitulos.forEach( function (cap){
+if(!localStorage.todosCapitulos){
+    localStorage.setItem( "todosCapitulos", JSON.stringify( capitulos ) )
+}
+
+let misCapitulos = JSON.parse( localStorage.getItem( "todosCapitulos" ) )
+
+misCapitulos.forEach( function (cap){
 
     const card = document.createElement("button")
     card.classList.add("card")
@@ -19,7 +25,8 @@ capitulos.forEach( function (cap){
     card.addEventListener( "click", function () {
         console.log( cap )
         localStorage.setItem("currentCapitulo", JSON.stringify(cap) )
-        window.location.href = "../pages/comic.html"
+        localStorage.setItem("todosCapitulos", JSON.stringify(capitulos) )
+        window.location.href = cap.webPage
     } )
 
     card.innerHTML = `
