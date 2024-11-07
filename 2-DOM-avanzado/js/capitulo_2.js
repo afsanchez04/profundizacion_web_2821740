@@ -2,14 +2,14 @@ const pantalla = document.querySelector("#num")
 const btnAdd = document.querySelector("#btnAdd")
 let count = 1
 
-let todosCapitulos = JSON.parse( localStorage.getItem('todosCapitulos') )
+/* let todosCapitulos = JSON.parse( localStorage.getItem('todosCapitulos') )
 let currentCapitulo = JSON.parse( localStorage.getItem('currentCapitulo') )
 
 todosCapitulos[1] = currentCapitulo
 
 localStorage.setItem( 'todosCapitulos', JSON.stringify(todosCapitulos) )
 
-console.log(todosCapitulos)
+console.log(todosCapitulos) */
 
 btnAdd.addEventListener( "click", function(){
     pantalla.textContent = count++

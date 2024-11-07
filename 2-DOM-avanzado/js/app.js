@@ -4,8 +4,8 @@ const container = document.querySelector(".container")
 if(!localStorage.todosCapitulos){
     localStorage.setItem( "todosCapitulos", JSON.stringify( capitulos ) )
 }
-
 let misCapitulos = JSON.parse( localStorage.getItem( "todosCapitulos" ) )
+
 
 misCapitulos.forEach( function (cap){
 
@@ -25,7 +25,7 @@ misCapitulos.forEach( function (cap){
     card.addEventListener( "click", function () {
         console.log( cap )
         localStorage.setItem("currentCapitulo", JSON.stringify(cap) )
-        localStorage.setItem("todosCapitulos", JSON.stringify(capitulos) )
+        localStorage.setItem("todosCapitulos", JSON.stringify(misCapitulos) )
         window.location.href = cap.webPage
     } )
 
